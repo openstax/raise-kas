@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "moduleResolution": "Node",
+  },
+  "include": [
+    "src/**/*.ts",
+    "testSetup.ts"
+  ]
+}

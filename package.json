@@ -19,12 +19,18 @@
     "source": "src/index.js",
     "scripts": {
         "gen:parsers": "node src/parser-generator.js",
-        "test": "bash -c 'yarn --silent --cwd \"../..\" test ${@:0} $($([[ ${@: -1} = -* ]] || [[ ${@: -1} = bash ]]) && echo $PWD)'"
+        "test": "jest"
     },
-    "dependencies": {},
     "devDependencies": {
+        "@babel/core": "^7.22.5",
+        "@babel/preset-env": "^7.22.5",
+        "@types/jest": "^29.5.2",
+        "@types/underscore": "^1.11.5",
+        "babel-jest": "^29.5.0",
+        "jest": "^29.5.0",
+        "jest-extended": "^4.0.0",
         "jison": "0.4.15",
-        "perseus-build-settings": "^0.1.0",
+        "ts-jest": "^29.1.0",
         "underscore": "1.4.4"
     },
     "peerDependencies": {

@@ -47,6 +47,8 @@ var grammar = {
             ["\\\\right\\|", 'return "RIGHT|"'],
             ["\\!", 'return "!"'], // not yet interpreted
             ["<=|>=|<>|<|>|=", 'return "SIGN"'],
+            ["\\\\gt", 'yytext = ">"; return "SIGN"'],
+            ["\\\\lt", 'yytext = "<"; return "SIGN"'],
             ["\\\\le", 'yytext = "<="; return "SIGN"'],
             ["\\\\ge", 'yytext = ">="; return "SIGN"'],
             ["\\\\leq", 'yytext = "<="; return "SIGN"'],

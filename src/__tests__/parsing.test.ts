@@ -433,6 +433,8 @@ describe("parsing", () => {
         expect("y \\leq x").toParseAs("y<=x");
         expect("y \\ge x").toParseAs("y>=x");
         expect("y \\geq x").toParseAs("y>=x");
+        expect("y \\gt x").toParseAs("y>x");
+        expect("y \\lt x").toParseAs("y<x");
     });
 
     test("function variables", () => {
